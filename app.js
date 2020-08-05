@@ -13,8 +13,6 @@ import {
   Option
 } from "@contentful/forma-36-react-components";
 
-const DEFAULT_ANIMAL = "cat";
-
 init(sdk => {
   const root = document.getElementById("root");
 

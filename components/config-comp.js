@@ -6,7 +6,8 @@ import "@contentful/forma-36-react-components/dist/styles.css";
 import "@contentful/forma-36-fcss/dist/styles.css";
 import {
   Note,
-  TextField
+  TextField,
+  Form
 } from "@contentful/forma-36-react-components";
 
 class Config extends Component {
@@ -27,17 +28,17 @@ class Config extends Component {
 
   render() {
     return (
-      <div>
+      <Form id='formID'>
         <Note noteType="primary" title="About the app">
             Configuration form here.
         </Note>
-        <TextField value={this.state.parameters.exampleEnvVar?this.state.parameters.exampleEnvVar:''}
+        <TextField name='TextFieldName' value={this.state.parameters.exampleEnvVar?this.state.parameters.exampleEnvVar:''}
         id='id'
         labelText='labelText'
         onChange={e=> {
             this.state.parameters.exampleEnvVar = e.target.value;
         }} />
-      </div>
+      </Form>
     );
   }
 
