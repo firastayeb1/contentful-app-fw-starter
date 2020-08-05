@@ -28,7 +28,7 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.app = this.props.sdk.app;
-    this.appConfigParameters = this.props.sdk.parameters.installation.exampleEnvVar;
+    this.appConfigParameters = this.props.sdk.parameters.installation.exampleEnvVar?this.props.sdk.parameters.installation.exampleEnvVar:'';
   }
 
   async componentDidMount() {
