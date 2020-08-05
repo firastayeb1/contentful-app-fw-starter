@@ -27,18 +27,18 @@ class Config extends Component {
   }
 
   render() {
-    return (
-      <Form id='formID'>
-        <Note noteType="primary" title="About the app">
+    return (<div>
+      <Note noteType="primary" title="About the app">
             Configuration form here.
         </Note>
+      <Form id='formID'>
         <TextField name='TextFieldName' value={this.state.parameters.exampleEnvVar?this.state.parameters.exampleEnvVar:''}
         id='id'
         labelText='labelText'
         onChange={e=> {
             this.state.parameters.exampleEnvVar = e.target.value;
         }} />
-      </Form>
+      </Form></div>
     );
   }
 
