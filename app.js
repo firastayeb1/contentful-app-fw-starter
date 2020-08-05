@@ -28,7 +28,7 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.app = this.props.sdk.app;
-    console.log('this.props.sdk.parameters.installation: ', this.props.sdk.parameters.installation)
+    console.log('this.props.sdk.parameters: ', this.props.sdk.parameters)
     this.appConfigParameters = this.props.sdk.parameters.installation;
   }
 
