@@ -27,7 +27,7 @@ class Config extends Component {
 
   render() {
     return (
-      <Form id="app-config">
+      <div>
         <Heading>Daily Animal app</Heading>
         <Note noteType="primary" title="About the app">
             Configuration form here.
@@ -38,7 +38,7 @@ class Config extends Component {
         onChange={e=> {
             this.state.parameters.exampleEnvVar = e.target.value;
         }} />
-      </Form>
+      </div>
     );
   }
 
