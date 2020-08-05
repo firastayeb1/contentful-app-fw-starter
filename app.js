@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import Config from './components/config-comp'
 
 import { init, locations } from "contentful-ui-extensions-sdk";
 import "@contentful/forma-36-react-components/dist/styles.css";
