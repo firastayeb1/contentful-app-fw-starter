@@ -28,7 +28,6 @@ class Config extends Component {
   render() {
     return (
       <div>
-        <Heading>Daily Animal app</Heading>
         <Note noteType="primary" title="About the app">
             Configuration form here.
         </Note>
